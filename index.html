@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Triangle</title>
+</head>
+<body>
+    <h1>Triangle anim</h1>
+    <div class="input">
+        <label for="range_x">X : </label>
+        <input
+            name="range_x"
+            id="range_x"
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            value="0"
+        />
+        <div class="valeur valeur_x">0°</div>
+        <label for="range_y">Y : </label>
+        <input
+            name="range_y"
+            id="range_y"
+            type="range"
+            min="0"
+            max="360"
+            step="1"
+            value="0"
+        />
+        <div class="valeur valeur_y">0°</div>
+        <button class="reset">Reset</button>
+    </div>
+    <div class="content">
+        <canvas class="canvas triangle front" width="300" height="300"></canvas>
+        <canvas class="canvas triangle left" width="300" height="300"></canvas>
+        <canvas class="canvas triangle right" width="300" height="300"></canvas>
+        <canvas class="canvas triangle back" width="300" height="300"></canvas>
+        <canvas class="canvas carre bottom" width="300" height="300"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
